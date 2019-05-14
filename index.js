@@ -8,11 +8,15 @@ const container = document.querySelector("#link-container")
 
 // prevent default action
 form.addEventListener("submit", function(e){
+  // prevents submit
   e.preventDefault();
+
   const newP = document.createElement("p")
 
   // creates a new paragraph
   container.appendChild(newP)
-  newP.innerHTML = `<a href="${tweet + input.value}" target="_blank">${input.value}</a>`
+  // prepend outline link
+  newP.innerHTML = `Read: <a href="${tweet + input.value}" target="_blank">${input.value}</a>`
+  // resets form
   form.reset()
 })
