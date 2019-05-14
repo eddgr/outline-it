@@ -1,6 +1,6 @@
 // Variables
 const tweet = "https://outline.com/"
-const form = document.querySelector("#tweetify")
+const form = document.querySelector("#outline")
 const input = document.querySelector("#input")
 const container = document.querySelector("#link-container")
 
